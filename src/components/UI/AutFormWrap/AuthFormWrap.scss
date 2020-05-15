@@ -1,0 +1,47 @@
+.auth-form{
+  width: 80%;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 15px auto;
+}
+
+.form-group{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+
+  .group-input{
+    height: 35px;
+    padding: 2.5px 5px;
+    width: 100%;
+    border:1px solid #005587;
+  }
+
+  .danger-input{
+    border-color: red;
+    outline: red;
+  }
+
+  label{
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 2.5px;
+    margin-bottom: 4px;
+  }
+
+  .bt-success{
+    display: inline-block;
+    border-color: #005587;
+    color: #005587;
+    font-weight: 400;
+    &:hover{
+      border-color: rgba(0, 122, 255, 0.95);
+      color: rgba(0, 122, 255, 0.95);
+    }
+  }
+
+}

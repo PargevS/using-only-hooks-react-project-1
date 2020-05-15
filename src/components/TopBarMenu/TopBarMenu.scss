@@ -1,0 +1,34 @@
+.header-menu-nav{
+  display: flex;
+  flex-direction: row;
+
+  .menu-list{
+    width: 100%;
+    display: flex;
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: center;
+
+    li{
+      display: inline-block;
+      min-width: 50px;
+      margin: 0px 5px;
+      padding: 5px;
+      transition: all 0.25s ease-in;
+      text-align: center;
+
+      a{
+        font-size: 16px;
+        color: #002e44;
+        font-weight: 600;
+        &:hover{
+          color: #007aff;
+        }
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  min-width: 319.8px;
+}
+
+a{
+  transition: color .2s ease-in-out;
+}
+
+// *********************
+.row{
+  width: 100%;
+  min-height: 1px;
+}
+
+//buttons styles
+.bt{
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: 1px solid #ababab;
+  cursor: pointer;
+}
+
