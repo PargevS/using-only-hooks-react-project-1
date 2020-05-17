@@ -6,43 +6,37 @@ const RegisterForm = ({inputChangeHandler, submitHandler}) => {
     return (
         <React.Fragment>
             <div className="form-group">
-                <label htmlFor="register-name">Name</label>
+                {/*<label htmlFor="register-name">Name</label>*/}
                 <input type="text"
-                       name='name'
+                       name='username'
                        id='register-name'
+                       placeholder='Your Name'
                        className='group-input'
                        onChange={inputChangeHandler}
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="register-email">Email</label>
+                {/*<label htmlFor="register-email">Email</label>*/}
                 <input type="email"
                        name='email'
                        id='register-email'
+                       placeholder='Your Email'
                        className='group-input'
                        onChange={inputChangeHandler}
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="register-password">Password</label>
+                {/*<label htmlFor="register-password">Password</label>*/}
                 <input type="password"
                        name='password'
                        id='register-password'
+                       placeholder='Password'
                        className='group-input'
                        onChange={inputChangeHandler}
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="register-password-confirm">Confirm password</label>
-                <input type="password"
-                       name='password-confirm'
-                       id='register-password-confirm'
-                       className='group-input'
-                       onChange={inputChangeHandler}
-                />
-            </div>
-            <div className="form-group">
-                <button className="bt bt-success" onClick={submitHandler}>Register</button>
+                <button className="bt bt-success" onClick={submitHandler}>Sing up</button>
             </div>
         </React.Fragment>
     );

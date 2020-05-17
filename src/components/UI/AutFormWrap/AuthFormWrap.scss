@@ -2,21 +2,57 @@
   width: 80%;
   max-width: 500px;
   min-width: 250px;
-  margin: 15px auto;
+  margin: 40px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 10px auto;
+}
+
+a{
+  display: inline;
+  width: auto;
+  color: #5cb85c;
+  text-align: center;
+  transition: all 0.15s ease-in;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 2px;
+  margin: 10px auto;
+  border-bottom: 1.5px solid transparent;
+
+  &:hover{border-bottom: 1.5px solid #5cb85c}
 }
 
 .form-group{
   width: 100%;
   padding: 5px 10px;
-  margin: 10px 0;
   display: block;
   text-align: center;
+  margin: 10px auto;
+
+  input{
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    padding: 25px 10px;
+    font-size: 18px;
+    color: #55595c;
+
+    &:focus{
+      outline: none;
+      border: 1.2px solid #007aff;
+    }
+  }
 
   .group-input{
     height: 35px;
-    padding: 2.5px 5px;
     width: 100%;
-    border:1px solid #005587;
   }
 
   .danger-input{
@@ -35,12 +71,12 @@
 
   .bt-success{
     display: inline-block;
-    border-color: #005587;
-    color: #005587;
+    border-color: #61bf61;
+    color: #61bf61;
     font-weight: 400;
     &:hover{
-      border-color: rgba(0, 122, 255, 0.95);
-      color: rgba(0, 122, 255, 0.95);
+      border-color: #55a755;
+      color: #55a755;
     }
   }
 
