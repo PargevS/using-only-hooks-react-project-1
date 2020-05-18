@@ -5,14 +5,17 @@ import {BrowserRouter} from 'react-router-dom';
 import './index.scss';
 import Routes from "./routes";
 import Header from "./components/Header";
+import {CurrentUserProvider} from "./contexts/currentUser";
 
 
 ReactDOM.render(
     (
-        <BrowserRouter>
-            <Header/>
-            <Routes/>
-        </BrowserRouter>
+        <CurrentUserProvider>
+            <BrowserRouter>
+                <Header/>
+                <Routes/>
+            </BrowserRouter>
+        </CurrentUserProvider>
     ),
     document.querySelector('#root')
 );

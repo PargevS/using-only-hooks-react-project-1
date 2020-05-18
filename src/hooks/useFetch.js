@@ -28,13 +28,13 @@ const useFetch = () => {
         axios(url, options)
             .then(result => {
                 setIsLoading(false);
-                setResponse(result)
+                setResponse(result.data)
             })
             .catch(error => {
                 setIsLoading(false);
-                setError(error);
+                setError(error.response.data);
             });
-    }, [isLoading, url])
+    }, [isLoading, url, options])
 
 
     return [{response, isLoading, error}, doFetch];

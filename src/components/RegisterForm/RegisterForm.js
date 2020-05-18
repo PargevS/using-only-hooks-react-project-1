@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 // *************************
 import './RegisterForm.scss';
+import FormErrorMessages from "../FormErrorMessages";
 
-const RegisterForm = ({inputChangeHandler, submitHandler}) => {
+const RegisterForm = ({inputChangeHandler, submitHandler, errors}) => {
     return (
         <React.Fragment>
+            {errors ? <FormErrorMessages errors={errors}/> : null}
                 <div className="form-group">
                     {/*<label htmlFor="register-name">Name</label>*/}
                     <input type="text"

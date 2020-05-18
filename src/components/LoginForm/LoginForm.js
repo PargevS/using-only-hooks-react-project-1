@@ -1,11 +1,13 @@
 import React from 'react';
 // *************************
 import './LoginForm.scss';
+import FormErrorMessages from "../FormErrorMessages";
 
-const LoginForm = ({inputChangeHandler, submitHandler}) => {
+const LoginForm = ({inputChangeHandler, submitHandler, errors}) => {
 
     return(
         <React.Fragment>
+            {errors ? <FormErrorMessages errors={errors}/> : null}
             <div className='form-group'>
                 {/*<label htmlFor="login-email">Email</label>*/}
                 <input type="email"
