@@ -1,19 +1,42 @@
-.top-bar{
-  .header-wrap{
+.top-bar {
+  .header-wrap {
     width: 100%;
     min-height: 50px;
 
-    .header-top{
-      text-align: center;
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+
+      .auth-links-list {
+        display: flex;
+
+        li.auth-links-item {
+          margin: 0 5px;
+          padding: 2.5px;
+
+          a {
+            color: #65696d;
+            transition: color 0.3s;
+          }
+
+          &:hover {
+            a {
+              color: #5cb85c;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
   }
 }
 
-#top-menu-toggle-input, #top-menu-toggle-btn{
+#top-menu-toggle-input, #top-menu-toggle-btn {
   display: none;
 }
 
-#top-menu-toggle-btn{
+#top-menu-toggle-btn {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -23,7 +46,7 @@
   padding: 10px;
   cursor: pointer;
 
-  .btn-line{
+  .btn-line {
     position: relative;
     width: 30px;
     height: 2.5px;
@@ -31,7 +54,7 @@
     margin-top: 13.75px;
     border-radius: 2px;
 
-    &:before, &:after{
+    &:before, &:after {
       content: '';
       display: block;
       width: 30px;
@@ -42,21 +65,26 @@
       transition: all 0.3s;
     }
 
-    &:before{top: 8px;}
-    &:after{bottom: 8px;}
+    &:before {
+      top: 8px;
+    }
+
+    &:after {
+      bottom: 8px;
+    }
   }
 }
 
-#top-menu-toggle-input:checked ~ #top-menu-toggle-btn{
-  .btn-line{
+#top-menu-toggle-input:checked ~ #top-menu-toggle-btn {
+  .btn-line {
     visibility: hidden;
 
-    &:after{
+    &:after {
       visibility: visible;
       transform: translateY(8px) rotate(-135deg);
     }
 
-    &:before{
+    &:before {
       visibility: visible;
       transform: translateY(-8px) rotate(135deg);
     }

@@ -15,7 +15,7 @@
   margin: 10px auto;
 }
 
-a{
+a.auth-link{
   display: inline;
   width: auto;
   color: #5cb85c;
@@ -75,8 +75,9 @@ a{
     color: #61bf61;
     font-weight: 400;
     &:hover{
-      border-color: #55a755;
-      color: #55a755;
+      border: 1.2px solid #ababab;
+      background-color: #5cb85c;
+      color: #ffffff;
     }
   }
 

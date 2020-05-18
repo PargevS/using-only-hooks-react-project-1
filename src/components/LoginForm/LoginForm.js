@@ -3,6 +3,7 @@ import React from 'react';
 import './LoginForm.scss';
 
 const LoginForm = ({inputChangeHandler, submitHandler}) => {
+
     return(
         <React.Fragment>
             <div className='form-group'>
@@ -26,7 +27,9 @@ const LoginForm = ({inputChangeHandler, submitHandler}) => {
                 />
             </div>
             <div className="form-group">
-                <button className="bt bt-success" onClick={submitHandler}>Sing In</button>
+                <button className="bt bt-success" onClick={() => {
+                    submitHandler();
+                }}>Sing In</button>
             </div>
         </React.Fragment>
     )
